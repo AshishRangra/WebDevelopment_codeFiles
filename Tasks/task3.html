@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Form</title>
+        <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(242, 245, 246);
+            align-items: center;
+            height: 600px;
+        }
+      
+            label{
+                font-size: 17px;
+                color: rgb(90, 83, 83);
+                font-weight: bold;
+            }
+            input{
+                width: 500px;
+                padding:12px 25px 15px;
+                border: 1px solid rgb(194, 196, 206);
+                margin: 13px 0;
+                border-radius: 4px;
+                font-size: 15px;
+                background-color: rgb(226, 236, 243);
+                
+            }
+            a{
+                text-decoration: none;
+                color:rgb(79, 82, 85);
+                font-size:15px;
+                
+            }
+            button{
+               margin-top: 30px;
+              margin-left:150px;
+                border:none;
+                padding: 13px;
+                width: 100px;
+                color:rgb(250, 93, 72);
+                background-color: rgb(255, 230, 228);
+                border-radius:5px;
+                font-weight: bold;
+                
+            }
+    </style>
+    </head>
+    <body>
+        <form action="#">
+            <h1 style="text-align: center;font-size:50px;">Welcome to Amora</h1>
+            <label for>Email</label><br>
+            <input type="email" placeholder="Enter Your Email *"><br>
+            <label for>Password</label><br>
+            <input type="password" placeholder="Enter Your Password *"><br>
+            <a href="#">Forgot your password?</a> <a href="#"
+                style="font-weight: bold;">recover password</a><br>
+            <button>Sign IN</button>
+        </form>
+    </body>
+</html>

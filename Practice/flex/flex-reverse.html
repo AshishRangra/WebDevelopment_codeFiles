@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+
+
+<!-- It determines how flex containers should wrap their content when it doesn't
+     fit in a single line. The flex-wrap property can take one of the following values:
+nowrap: This is the default value. It specifies that the flex container 
+should not wrap its items. All items are forced onto one line.
+
+wrap: This value allows the flex container to wrap its items onto multiple 
+lines if needed. Items will be stacked vertically or horizontally depending 
+on the flex-direction property.
+
+wrap-reverse: This value is similar to wrap, but it wraps the items in the
+ reverse direction. If the normal direction is left-to-right, it will wrap
+  right-to-left, and vice versa. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid;
+          /*  flex-wrap:wrap;
+          flex-wrap:nowrap;
+          flex-wrap:wrap-reverse;*/
+          
+            flex-flow:wrap;
+
+            
+        }
+        .container>div{
+            margin: 10px;
+            padding: 30px;
+            width: 100px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+</body>
+</html>

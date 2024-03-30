@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tables</title>
+        <style>
+        table,th,td{
+        border: 1px solid white;
+            width: 1000px;
+            height: 30px;
+            border-collapse: collapse;
+            border-radius: 50px;
+            text-align: center;
+            
+        }
+        body{
+            margin-left: 300px;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <h1 style="color: rgb(93, 187, 206); margin-left:350px">Html
+            Tables</h1>
+        <table>
+            <colgroup>
+                <col span="1" style="background-color:rgb(240, 247, 244) ;">
+                <col span="2"
+                    style="background-color:rgb(221, 247, 238) ;"></colgroup>
+            <caption
+                style="font-size: large;font-weight:bold;color:rgb(6, 127, 87)">Flight
+                Information</caption>
+            <tr>
+                <th>Date</th>
+                <th>Departs</th>
+                <th>Arrive</th>
+            </tr>
+            <tr><td>
+                    &#9992;Tue.,Dec.3
+                </td><td>
+                    9:25 P.M. HNL
+                </td>
+                <td>
+                    6:55 A.M. Paris,France(CDG)
+                </td></tr>
+            <tr><td>
+                    &#9992; Mon.,Dec.9
+                </td><td>12:55 P.M. Paris,France(CDG)</td>
+                <td>1:46 P.M> HNL</td></tr>
+            <tr><td>
+                    &#9992;Tue.,Dec.3
+                </td><td>
+                    9:25 P.M. HNL
+                </td>
+                <td>
+                    6:55 A.M. Paris,France(CDG)
+                </td></tr>
+            <tr><td>
+                    &#9992; Mon.,Dec.9
+                </td><td>12:55 P.M. Paris,France(CDG)</td>
+                <td>1:46 P.M> HNL</td></tr>
+
+        </table>
+        <table class="table2">
+            <caption
+                style="font-size: large;font-weight:bold;color:rgb(6, 127, 87);margin-top:100px">Weather
+                report</caption>
+            <colgroup>
+                <col span="1" style="background-color: rgb(229, 237, 243);">
+                <col span="2" style="background-color:rgb(244, 244, 197);">
+                <col span="3" style="background-color: rgb(200, 216, 236);">
+                <col span="1" style="background-color:rgb(229, 237, 243);">
+            </colgroup>
+            <tr>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+
+            </tr>
+            <tr>
+                <td>Cloudy</td>
+                <td>Sunny</td>
+                <td>Sunny</td>
+                <td>Rain</td>
+                <td>Rain</td>
+                <td>Rain</td>
+                <td>Cloudy</td>
+
+            </tr>
+            <tr>
+                <td style="font-weight: bold;"> &#9729; 15<sup>0</sup></td>
+                <td style="font-weight: bold;"> &#127774; 29<sup>0</sup></td>
+                <td style="font-weight: bold;"> &#127774; 29<sup>0</sup></td>
+                <td style="font-weight: bold;">&#9748; 20<sup>0</sup></td>
+                <td style="font-weight: bold;">&#9748; 17<sup>0</sup></td>
+                <td style="font-weight: bold;">&#9748; 20<sup>0</sup></td>
+                <td style="font-weight: bold;">&#9729; 18<sup>0</sup></td>
+            </tr>
+        </table>
+    </body>
+</html>

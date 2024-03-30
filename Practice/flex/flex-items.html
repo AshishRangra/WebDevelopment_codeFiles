@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- flex-basis: -->
+        <!-- The flex-basis property sets the initial size of a flex item along the main axis
+             before it is distributed in the flex container.
+        It defines the default size of an item before the remaining space is distributed.
+        css
+        If the value is set to auto, the item will be sized based on its content.
+
+        flex-grow:
+        The flex-grow property determines how much a flex item should grow relative to the other
+         flex items when there is extra space along the main axis.
+        It is a unitless number that represents the factor by which the item should grow.
+        css
+        For example, if two items have flex-grow: 1 and flex-grow: 2 respectively, the second item 
+        will grow twice as much as the first item when there is extra space available.
+
+        flex-shrink:
+
+        The flex-shrink property determines how much a flex item should shrink relative to the other 
+        flex items when there is insufficient space along the main axis.
+        It is a unitless number that represents the factor by which the item should shrink.
+        css
+        If an item has flex-shrink: 0, it won't shrink, and if it's set to a positive number, it will
+         shrink proportionally to the other items.
+
+        Here's an example that combines these properties:
+        In this example, flex: 1 1 100px; is a shorthand for setting flex-grow, flex-shrink, and 
+        flex-basis in a single property. The first value is flex-grow, the second is flex-shrink, and the third is flex-basis. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            border:1px solid;
+        }
+        .container>div{
+            background-color: antiquewhite;
+            padding: 23px;
+            margin:10px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="order: 6;">1</div>
+        <div style="order: 1;flex-basis:200px;">2</div>
+        <div style="order:5;flex-shrink:0">3</div>
+        <div style="order:2;">4</div>
+        <div style="order:4;flex-grow:10">5</div>
+        <div style="order:3;">6</div>
+    </div>
+    <div class="container">
+        <div>1</div>
+        <div style="flex-grow: 1;">2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

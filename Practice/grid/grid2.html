@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        .container{
+            display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-content: center;
+        height: 500px;
+      gap:10px;
+        }
+        .parts{
+          background-color: antiquewhite;
+          padding: 10px;
+            
+           
+
+        }
+        .p1{
+            grid-column-start: 1;
+          grid-column-end: 3;
+        }
+        .pt2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }   
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="parts p1">1</div>
+        <div class="parts pt2">2</div>
+        <div class="parts">3</div>
+        <div class="parts">4</div>
+        <div class="parts">5</div>
+        <div class="parts">6</div>
+        <div class="parts">7</div>
+        <!-- <div class="parts">8</div> -->
+        <!-- <div class="parts">9</div> -->
+    </div>
+</body>
+</html>
